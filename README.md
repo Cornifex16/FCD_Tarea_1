@@ -24,7 +24,36 @@ Asignacion de paises:
 
 ## Datos faltantes
 
-*Under Construction*
+Despues de filtrar los datos por los paises obtenemos que hay un total 4400 de datos en el archivo.
+
+El total de NA fue: 1135.
+El total de filas con al menos un NA: 1039
+
+De estos las variables que contienen NA son las siguientes:
+
+| Variable | Faltantes | Porcentaje |
+| ---- | ---- | ---- |
+| idx_expectativa_global | 860 | 19.55%|
+| idx_satisfaccion_vida | 179 | 4.07% |
+| ingreso anual | 96 | 2.18% |
+
+Notar que la variable con mas datos faltantes es el indice de expectativa global
+
+El promedio de NA obtenidos por pais es:
+
+| Pais | NA Promedio |
+| ---- | ---- |
+| India | 0.290 |
+| Suecia | 0.226 |
+
+El promedio de NA obtenidos por generacion es:
+
+| Generacion | NA promedio |
+| ---- | ---- |
+| Baby Boomer | 0.372 |
+| Gen X | 0.289 |
+| Gen Z | 0.160 |
+| Millenial | 0.212 |
 
 ## Datos atipicos
 
