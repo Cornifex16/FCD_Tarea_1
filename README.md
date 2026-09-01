@@ -37,7 +37,18 @@ De estos las variables que contienen NA son las siguientes:
 | idx_satisfaccion_vida | 179 | 4.07% |
 | ingreso anual | 96 | 2.18% |
 
-Notar que la variable con mas datos faltantes es el indice de expectativa global
+Notar que la variable con mas datos faltantes es el indice de expectativa global, esto puede deberse a como esta armada la entrevista. Por enunciado se indica que ese campo es "porcentaje de hitos pendientes e importantes con expectativa alta", por lo que es posible que no se rellene debido a que no hay hitos pendientes o importantes o que tienen expectativa baja. Esto se describe como una falta estructural.
+
+Evaluando todas las expectativas se puede notar que todos los errores son estructurales:
+
+| Hito | estructurales | reales |
+| ---- | ---- | ---- |
+| trabajo | 1850 | 0 |
+| vivienda propia | 1278 | 0 |
+| vida independiente | 1865 | 0 |
+| ser padre | 1077 | 0 |
+| casarse | 1055 | 0 |
+| mascota | 1795 | 0 |
 
 El promedio de NA obtenidos por pais es:
 

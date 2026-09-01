@@ -1,5 +1,5 @@
 # filtrado inicial de paises y exportacion a csv
-datos_originales <- read.csv("./encuesta_aspiraciones_2026 3.csv")
+datos_originales <- read.csv("./FCD_Tarea_1/encuesta_aspiraciones_2026 3.csv")
 
 paises_filtrados <- subset(datos_originales, pais %in% c("India", "Suecia"))
 
@@ -29,6 +29,9 @@ cat(names(na_col)[1], ":", na_col[1], "(", round(na_col[1]/nrow(datos)*100, 2), 
 
 # Vision general: faltantes estructurales en expectativa_* (solo aplica si ocurrio == "No")
 cat("\n--- Faltantes estructurales vs reales (expectativa) ---\n")
+
+# Se recorren todas las instancias de expectativas, luego se revisa si el NA es estructural dado la respuesta o es un error real.
+
 for (v in grep("^expectativa_", names(datos), value = TRUE)) {
   hito <- sub("expectativa_", "", v)
   oc <- paste0("ocurrio_", hito)
