@@ -68,7 +68,7 @@ El promedio de NA obtenidos por generacion es:
 
 ## Datos atipicos
 
-*Under Construction*
+*Under Construction* # CODIGO LISTO Y FUNCIONAL FALTA TRASPASAR INFO
 
 ## Distribucion de variables cualitativas
 
